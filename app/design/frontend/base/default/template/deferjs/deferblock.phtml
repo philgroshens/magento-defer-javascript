@@ -1,0 +1,15 @@
+<?php
+$js1 = array();
+$js2 = array();
+$html = $this->getChildHtml();
+$scripts = explode('++++', $html);
+foreach ($scripts as $script) {
+    $pos = strpos($script, 'src="');
+    if ($pos) {
+        $js1[] = $script;
+    } else {
+        $js2[] = $script;
+    }
+}
+echo implode('', $js1) . implode('', $js2);
+?>

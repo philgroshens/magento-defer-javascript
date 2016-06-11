@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<layout>
+    <company_deferjs_custom_handle_inline>
+        <reference name="root">
+            <block type="core/template" as="company_deferjs_inline" after="-" name="company_deferjs_inline" output="toHtml" template="deferjs/deferblock.phtml"/>
+        </reference>
+    </company_deferjs_custom_handle_inline>
+</layout>
